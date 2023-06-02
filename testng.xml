@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="ConcurrentTestSuite" parallel="tests" >
+<test name="ChromeTest">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="browserUrl" value="https://shop.demoqa.com/shop/"/>
+
+    <classes>
+        <class name="Application.BaseTests"/>
+    </classes>
+</test>
+<!--<test name="FirefoxTest">-->
+<!--    <parameter name="browser" value="edge"/>-->
+<!--    <parameter name="browserUrl" value="https://shop.demoqa.com/shop/"/>-->
+<!--    <classes>-->
+<!--        <class name="Application.BaseTests"/>-->
+<!--    </classes>-->
+<!--</test>-->
+</suite>
